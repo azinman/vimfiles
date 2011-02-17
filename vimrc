@@ -224,11 +224,11 @@ if v:version >= 703
 endif
 
 "indent settings
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set shiftround " use multiple of shiftwidth when indenting with '<' or '>'
 set smarttab " insert tabs on start of line according to shiftwidth not tabstop
-set noexpandtab
+set expandtab
 set autoindent " set auto-indenting on for programming
 set copyindent " copy previous indentation on autoindenting
 
@@ -434,14 +434,7 @@ vmap <S-Down> j
 vmap <S-Left> h
 vmap <S-Right> l
 
-" Use the monokai color scheme
-if &t_Co >= 256 || has("gui_running")
-	if has("gui_running")
-		colorscheme monokai
-	else
-		colorscheme darkspectrum
-	endif
-endif
+colorscheme wombat256
 
 if &t_Co > 2 || has("gui_running")
 	" switch syntax highlighting on, when the terminal has colors

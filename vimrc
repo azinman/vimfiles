@@ -281,7 +281,7 @@ if !has("gui")
 endif
 
 if has("gui_running")
-  set guifont=Replica-Mono\ 10
+  set guifont=Osaka-Mono:h15
 endif
 
 
@@ -435,6 +435,7 @@ vmap <S-Left> h
 vmap <S-Right> l
 
 colorscheme wombat256
+
 
 if &t_Co > 2 || has("gui_running")
 	" switch syntax highlighting on, when the terminal has colors

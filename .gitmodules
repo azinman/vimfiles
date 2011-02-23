@@ -46,3 +46,6 @@
 [submodule "bundle/scala-vim-bundle"]
 	path = bundle/scala-vim-bundle
 	url = git://github.com/akhil/scala-vim-bundle.git
+[submodule "bundle/sbt"]
+	path = bundle/sbt
+	url = https://github.com/MarcWeber/vim-addon-sbt.git

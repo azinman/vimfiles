@@ -318,6 +318,10 @@ function! SetCursorPosition()
 	end
 endfunction
 
+"highlight the current line in the current screen
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+
 "define :HighlightLongLines command to highlight the offending parts of
 "lines that are longer than the specified length (defaulting to 80)
 command! -nargs=? HighlightLongLines call s:HighlightLongLines('<args>')

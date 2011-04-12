@@ -39,6 +39,7 @@ hi CursorLine					ctermbg=236		cterm=none						guibg=#2d2d2d
 hi MatchParen	ctermfg=7		ctermbg=243		cterm=bold		guifg=#f6f3e8	guibg=#857b6f	gui=bold
 hi Pmenu		ctermfg=7		ctermbg=238						guifg=#f6f3e8	guibg=#444444
 hi PmenuSel		ctermfg=0		ctermbg=192						guifg=#000000	guibg=#cae682
+hi SpellBad     ctermfg=160 guifg=fg      ctermbg=bg                cterm=underline               guisp=#df0000
 endif
 
 

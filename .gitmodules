@@ -49,3 +49,30 @@
 [submodule "bundle/sbt"]
 	path = bundle/sbt
 	url = https://github.com/MarcWeber/vim-addon-sbt.git
+[submodule "bundle/sbt-addon"]
+	path = bundle/sbt-addon
+	url = https://github.com/MarcWeber/vim-addon-sbt.git
+[submodule "bundle/mw-utils"]
+	path = bundle/mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/mw-actions"]
+	path = bundle/mw-actions
+	url = https://github.com/MarcWeber/vim-addon-actions.git
+[submodule "bundle/mw-tlib"]
+	path = bundle/mw-tlib
+	url = https://github.com/vim-scripts/tlib.git
+[submodule "bundle/mw-async"]
+	path = bundle/mw-async
+	url = https://github.com/MarcWeber/vim-addon-async.git
+[submodule "bundle/mw-completion"]
+	path = bundle/mw-completion
+	url = https://github.com/MarcWeber/vim-addon-completion.git
+[submodule "bundle/mw-json-encoding"]
+	path = bundle/mw-json-encoding
+	url = https://github.com/MarcWeber/vim-addon-json-encoding.git
+[submodule "bundle/mw-signs"]
+	path = bundle/mw-signs
+	url = https://github.com/MarcWeber/vim-addon-signs.git
+[submodule "ensime"]
+	path = ensime
+	url = https://github.com/MarcWeber/ensime.git

@@ -556,3 +556,11 @@ set efm=%E\ %#[error]\ %f:%l:\ %m,%C\ %#[error]\ %p^,%-C%.%#,%Z,
        \%W\ %#[warn]\ %f:%l:\ %m,%C\ %#[warn]\ %p^,%-C%.%#,%Z,
        \%-G%.%#
 
+" screen issues
+if match($TERM, "screen")!=-1
+  set term=xterm-256color
+  let g:GNU_Screen_used = 1
+else
+  let g:GNU_Screen_used = 0
+endif
+

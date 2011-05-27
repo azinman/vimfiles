@@ -1,3 +1,5 @@
+echo "Hello"
+
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
 set nocompatible " use vim defaults
@@ -335,12 +337,11 @@ function! s:HighlightLongLines(width)
 endfunction
 
 " spelling...
-if v:version >= 700
-
-  setlocal spell spelllang=en
-  nmap <LocalLeader>ss :set spell!<CR>
-
-endif
+" disabled for now...
+"if v:version >= 700
+  "setlocal spell spelllang=en
+  "nmap <LocalLeader>ss :set spell!<CR>
+"endif
 
 " Extra DEFS and bindings
 
@@ -547,3 +548,10 @@ set pastetoggle=<F2>
 
 " rerun last command
 nmap <c-b> 1@:
+
+"Shutup ruby shit when on mac cli
+let g:LustyJugglerSuppressRubyWarning = 1
+
+"bundle jquery.vim
+au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+

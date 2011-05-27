@@ -76,3 +76,12 @@
 [submodule "ensime"]
 	path = ensime
 	url = https://github.com/MarcWeber/ensime.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule "bundle/vim-jquery"]
+	path = bundle/vim-jquery
+	url = git://github.com/garbas/vim-jquery.git

@@ -85,3 +85,6 @@
 [submodule "bundle/vim-jquery"]
 	path = bundle/vim-jquery
 	url = git://github.com/garbas/vim-jquery.git
+[submodule "bundle/jshint.vim"]
+	path = bundle/jshint.vim
+	url = git://github.com/walm/jshint.vim.git

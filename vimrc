@@ -561,3 +561,9 @@ else
   let g:GNU_Screen_used = 0
 endif
 
+
+" tagbar
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
+let g:tagbar_width=26                          " Default is 40, seems too wide
+noremap <silent> <Leader>t :TagbarToggle       " Display panel with \t (or ,t)
+

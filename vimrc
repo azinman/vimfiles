@@ -3,8 +3,42 @@
 set nocompatible " use vim defaults
 set scrolloff=3  " keep 3 lines when scrolling
 
-"Use pathogen to load all bundles
-call pathogen#runtime_append_all_bundles()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+Bundle 'altercation/vim-colors-solarized'
+" vim-session - use good session manager ( Misc needed for vim-session )
+Bundle 'xolox/vim-session'
+Bundle 'xolox/vim-misc'
+" Fugitive - Git wrapper
+Bundle 'tpope/vim-fugitive'
+" Shows changed lines since last git commit
+Bundle 'mhinz/vim-signify'
+" Ack
+Bundle 'mileszs/ack.vim.git'
+
+" Surround - surround text
+Bundle 'tpope/vim-surround'
+"Ctrl-P Fuzzy Finding Files
+Bundle 'kien/ctrlp.vim'
+" Highlights hex Colors (useful for editing color files
+Bundle 'hexHighlight.vim'
+" Vim-ios allows switching between .m/.h, other xcode stuff
+Bundle 'eraserhd/vim-ios'
+
+filetype plugin indent on     " required! (for vundle)
+set statusline+=%{SyntasticStatuslineFlag()}
+
+" vim-sessions Settings
+let g:session_autoload = 'no'
+let g:session_autosave = 'yes'
+
+
 
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -439,10 +473,11 @@ vmap <S-Right> l
 
 colorscheme wombat256
 
-
 if &t_Co > 2 || has("gui_running")
   " switch syntax highlighting on, when the terminal has colors
   syntax on
+  colorscheme solarized
+  set background=light
 endif
 
 set ignorecase      " case-insensitive search
@@ -566,4 +601,8 @@ endif
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
 let g:tagbar_width=26                          " Default is 40, seems too wide
 noremap <silent> <Leader>t :TagbarToggle       " Display panel with \t (or ,t)
+
+
+" Vim-IOS
+map <LocalLeader><Up> :A<CR>
 
